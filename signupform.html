@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="Resources/ansi.jpg" type="image/x-icon">
+    <style>
+
+        body, div, h1, form, input, p
+        {
+            margin: 0;
+            padding: 0;
+            font-family: Roboto, Ariel, San-serif;
+            font-size:16px;
+            color: #5f6ea0;
+
+        }
+        h1{
+            padding: 10px 0;
+            font-size: 30px;
+            font-weight: 300;
+            text-align: center;
+
+        }
+        p{
+            font-size: 12px;
+
+        }
+        hr{
+            color: #a9a9a9;
+            opacity: 0.3;
+        }
+        .main-block{
+            max-width: 340px;
+            min-height: 460px;
+            padding: 10px 0;
+            margin: auto;
+            border-radius: 5px;
+            box-shadow: 1px 2px 5px rgba(0,0,0,31);
+            background: #ebebeb;
+        }
+        form{
+            margin: 0 30px;
+        }
+        .account_type{
+            margin: 15px 0;
+        }
+        input [type=radio] {
+            display: none;
+        }
+        label#icon{
+            margin: 0;
+            border-radius: 5px 0 0 5px;
+        }
+        label.radio{
+            position: relative;
+            display: inline-block;
+            padding-top: 20px;
+            margin-right: 20px;
+            text-indent: 30px;
+            overflow: visible;
+            cursor: pointer;
+        }
+        label.radio:before{
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #1c87c9;
+        }
+        label.radio:after{
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 4px;
+            width: 9px;
+            height: 4px;
+            border: 3px solid #ffffff;
+            border-top: none;
+            border-right: none;
+            transform: rotate(-45deg);
+            opacity: 0;
+
+        }
+        input[type=text], input[type=password]{
+            width: calc(100% -57px)
+            height: 36px;
+            margin: 13px 0 0 -5px;
+            padding-left: 10px;
+            border-radius: 0 5px 5px 0;
+            border: solid 1px #cbc9c9;
+            box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+            background: white;
+        }
+        input[type=password]{
+            margin-bottom: 15px;
+        }
+        #icon{
+            display: inline-block;
+            padding: 9.3px 15px;
+            box-shadow: 1px 2px 5px rgba(0,0,0,.0.9);
+            background: #1c87c9;
+            color: white;
+        }
+        .btn-block{
+            margin-top: 10px;
+            text-align: center;
+        }
+        button {
+            width: 100%;
+            padding: 10px 0;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            background: #1c87c9;
+            font-size: 14px;
+            font-weight: 600;
+            color: white;
+        }
+        button:hover
+        {
+            background: #26a9e0;
+        }
+
+
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="footer.css">
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body >
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="fixed-nav-bar">
+    <a class="navbar-brand" href="/">
+
+    </a>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <a class="active" href="#"><i class="fa fa-fw fa-home"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about%20us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Properties.html">Properties</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="loginform.html">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="buy.html">Buy</a></li>
+                            <li><a class="dropdown-item" href="Properties.html">Sell</a></li>
+                            <li><a class="dropdown-item" href="#">Manage</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </a>
+    </div>
+</nav>
+<p>Kindly register your details for notification and uploads:</p>
+
+<br>
+<form class="main-block">
+    <div>
+        <h3>Sign Up</h3>
+
+    </div>
+    <hr>
+    <div>
+        <table>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><label for="fname">First Name:</label><br></td>
+                <td>  <input type="text" id="fname" name="fname" value="" placeholder="Enter First Name"><br></td>
+            </tr>
+            <tr>
+                <td><label for="fname">Last Name:</label><br></td>
+                <td><input type="text" id="fname" name="fname" value="" placeholder="Enter Last Name"></td>
+            </tr>
+            <tr>
+                <td><label for="fname">Date of Birth:</label><br></td>
+                <td><select name="date" id="date"><option value="date">Date</option></select>
+                    <select name="month" id="month"><option value="month">Month</option></select>
+                    <select name="year" id="year"><option value="year">Year</option></select></td>
+            </tr>
+            <tr>
+                <td><label for="fname">Gender:</label></td>
+                <td><input type="radio" value="none" id="male" name="gender"checked>
+                    <label for="male" class="radio" >Male</label>
+
+                    <input type="radio" value="none" id="female" name="gender">
+                    <label for="female" class="radio" >Female</label> </td>
+            </tr>
+            <tr>
+                <td><label for="fname">Country:</label></td>
+                <td><select name="country" id="country" >
+                    <option value="country">Country</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="fname">E-mail:</label></td>
+                <td><input type="text" name="name" id="name" placeholder="Enter  Email" required></td>
+            </tr>
+            <tr>
+                <td><label for="fname">Phone</label></td>
+                <td><input type="text" name="name" id="name" placeholder="Enter Phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="fname">Password</label></td>
+                <td> <input type="text" name="name" id="name" placeholder="Password" required></td>
+            </tr>
+            <tr>
+                <td><label for="fname">Confirm Password</label></td>
+                <td> <input type="text" name="name" id="name" placeholder="Password" required></td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td><input type="checkbox" id="words" name="none" value="none">
+                    <label for="none" >I Agree to the <a href="#">Terms</a> of use</label></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="btn-block">
+        <button type="submit"href="/">Submit</button>
+        <button type="Cancel"href="/">Cancel</button>
+        <p> <a href="index.html"> Home</a></p>
+
+    </div>
+
+</form>
+<br>
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="buy.html">Buy</a></li>
+                        <li><a href="Properties.html">Sell</a></li>
+                        <li><a href="#">Manage</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="index.html">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>ANSI PROPERTIES LIMITED</h3>
+                    <p>We are entitled to give you the best services when it comes to real estate.Your achievements are our joy and we will serve and walk with you side by side until you acquire what you had desired.</p>
+                </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <p class="copyright">ansi properties © 2021</p>
+        </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</div>
+
+
+</body>
+</html>
